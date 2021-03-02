@@ -1,0 +1,31 @@
+.projects {
+    margin-top: 50px;
+}
+
+.project {
+    min-width: 80%;
+    min-height: 220px;
+    display: flex;
+    align-items:center;
+    margin: 20px 10px;
+    background-color: white;
+    .description {
+        display: block;
+        text-align: center;
+        height: 100%;
+        margin: inherit;
+
+        a {
+            text-decoration: none;
+            color:black;
+        }
+    }
+
+    img {
+        object-fit: cover;
+        margin: 5px;
+        width: 415px;
+        height: 205px;
+    }
+}
+
