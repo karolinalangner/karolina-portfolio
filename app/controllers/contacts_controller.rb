@@ -11,8 +11,8 @@ class ContactsController < ApplicationController
       flash.now[:error] = nil
       redirect_to root_path, notice: 'Message sent successfully'
     else
-      flash.now[:error] = 'Cannot send message'
-      render :new
+      flash.now[:error] = 'Something went wrong.'
+      render 'pages/contact'
     end
   end
 end

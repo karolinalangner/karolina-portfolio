@@ -17,8 +17,13 @@
   
    <div class="container">
       <div class="logo">
+      
         <h4 class="bold text-center"><%=link_to "Karolina Langner", root_path %></h4>
-      </div>
+      </div> 
+      <div style="color: cornflowerblue; margin-top: 5px;">
+        <p class="notice text-center"><%= notice %></p>
+        <p class="alert text-center"><%= alert %></p>
+      </div> 
       <div class="content">
         <%= yield %>
       </div>
