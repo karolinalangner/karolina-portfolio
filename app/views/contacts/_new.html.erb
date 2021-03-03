@@ -1,0 +1,23 @@
+<div style="width:80%; margin-left: auto; margin-right: auto;">
+
+    <%= simple_form_for @contact do |f| %>
+        <% if flash[:error].present? %>
+            <p> flash[:error]</p>
+        <% end %>
+        <div class="form-inputs">
+            <%= f.input :name, required: true, label: "Name" %>
+        </div>
+        <div class="form-inputs">
+            <%= f.input :email, required: true  %>
+        </div>
+        <div class="d-none">
+            <%= f.input :nickname %>
+        </div>
+        <div class="form-inputs">
+            <%= f.input :message, as: :text, label: "Your message:" %>
+        </div>
+        <div class="form-actions">
+            <%= f.submit 'Submit', class: "btn btn-primary" %>
+        </div>
+    <% end %>
+</div>
