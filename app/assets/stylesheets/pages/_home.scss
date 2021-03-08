@@ -3,3 +3,11 @@
 h1 {
     margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 580px) {
+    .content {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0;
+    }
+}
