@@ -5,7 +5,9 @@
     background-color: white;
     box-shadow: rgba(255, 255, 255, 0.8) 2px 3px 10px;
     
-   
+    .menu {
+        display: none;
+    }
 
     a {
         color: rgba(0,0,0,0.87);
@@ -18,3 +20,13 @@
 
     }
 }
+
+@media only screen and (max-width: 580px) {
+    .logo .menu {
+      display: block;
+      margin: 0;
+      position: absolute;
+      margin-top: 5px;
+    }
+  }
+  

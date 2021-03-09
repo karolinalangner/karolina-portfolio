@@ -1,5 +1,6 @@
+
 .footer {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 40px;
@@ -9,5 +10,11 @@
     
     p {
         color: rgba(0,0,0,0.5)    
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .footer {
+        display: flex;
     }
 }
